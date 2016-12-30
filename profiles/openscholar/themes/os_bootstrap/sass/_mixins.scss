@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "OpenSansHebrew";
+  src: url('../fonts/openSenseHebrew/OpenSansHebrew-Regular.ttf') format('truetype');
+  src: url('../fonts/openSenseHebrew/OpenSansHebrew-Bold.ttf');
+  src: url('../fonts/openSenseHebrew/OpenSansHebrew-BoldItalic.ttf');
+  src: url('../fonts/openSenseHebrew/OpenSansHebrew-ExtraBold.ttf');
+  src: url('../fonts/openSenseHebrew/OpenSansHebrew-Italic.ttf');
+  src: url('../fonts/openSenseHebrew/OpenSansHebrew-Light.ttf');
+  src: url('../fonts/openSenseHebrew/OpenSansHebrew-LightItalic.ttf');
+  src: url('../fonts/openSenseHebrew/OpenSansHebrew-Regular.ttf');
+  src: url('../fonts/openSenseHebrew/opensanshebrew-bold-webfont.woff');
+  src: url('../fonts/openSenseHebrew/opensanshebrew-bolditalic-webfont.woff');
+  src: url('../fonts/openSenseHebrew/opensanshebrew-extrabold-webfont.woff');
+  src: url('../fonts/openSenseHebrew/opensanshebrew-extrabolditalic-webfont.woff');
+  src: url('../fonts/openSenseHebrew/opensanshebrew-italic-webfont.woff');
+  src: url('../fonts/openSenseHebrew/opensanshebrew-light-webfont.woff');
+  src: url('../fonts/openSenseHebrew/opensanshebrew-lightitalic-webfont.woff');
+  src: url('../fonts/openSenseHebrew/opensanshebrew-regular-webfont.woff');
+}
+
+/* Lists presentation*/
+@mixin list-with-image() {
+
+  .field-name-body {
+    @include text-align(left);
+  }
+
+  header {
+    padding-top: 0px;
+  }
+
+  h2, p, p:last-child {
+    max-width: 614px;
+    font-family: OpenSansHebrew, arial, sans-serif;
+  }
+
+  .field-name-field-photo  {
+    @include float(left);
+    @include padding-right(20px);
+    padding-top: 5px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  h2 {
+    display: inline-block;
+    line-height: 0;
+    font-family: OpenSansHebrew, arial, sans-serif;
+    font-weight: bold;
+
+    a {
+      color: $color1;
+    }
+  }
+
+  a[rel="tag"] {
+    display: none;
+  }
+
+  .field-name-body  > p {
+    padding-right: 5px;
+  }
+}
+
+/* Single presentation*/
+@mixin single-node() {
+  .photo {
+    float: none;
+
+    .field-name-field-photo {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.page-people {
+  .node-person {
+    @include list-with-image;
+  }
+}
+
+/* Calender */
+@mixin calender() {
+
+  .date-nav-wrapper {
+
+    .date-nav{
+
+      .date-heading a {
+        color: #ffffff;
+        font-family: OpenSansHebrew, arial, sans-serif;
+        font-weight: bold;
+      }
+
+      .pager {
+        @include padding(0px, 10px, 0px, 10px);
+      }
+    }
+  }
+
+  .date-nav .pager .date-next {
+    a::before {
+      content: "\f104";
+    }
+  }
+
+  .mini-day-on {
+    padding: 2px;
+  }
+
+  .date-nav .pager .date-prev {
+    a::before {
+      content: "\f105";
+
+    }
+  }
+
+  .date-nav .pager .date-prev,
+  .date-nav .pager .date-next {
+    margin: -5px 0px 0px 0px;
+
+    a::before {
+      font: normal normal bolder 16px/1 FontAwesome;
+      color: #ffffff;
+    }
+
+    a {
+      color: transparent;
+    }
+  }
+}
+
+@mixin placeholder() {
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+    font-weight: bold;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+    opacity:  1;
+    font-weight: bold;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+    opacity:  1;
+    font-weight: bold;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
+    font-weight: bold;
+  }
+}
+
+@mixin title() {
+  font-size: 29px;
+  font-weight: bold;
+  color: #25a394;
+  letter-spacing: 1.9px;
+  margin-top: 0;
+}

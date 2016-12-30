@@ -1,0 +1,6 @@
+name = Green
+description = Flavor 3
+screenshot = screenshot.png
+
+styles[en]=flavor3.css
+styles[he]=flavor3_rtl.css
