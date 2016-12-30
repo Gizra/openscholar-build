@@ -1,6 +1,0 @@
-name = Red
-description = Flavor 2
-screenshot = screenshot.png
-
-styles[en]=flavor2.css
-styles[he]=flavor2_rtl.css

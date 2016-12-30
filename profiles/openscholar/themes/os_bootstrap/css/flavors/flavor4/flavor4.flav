@@ -1,6 +1,0 @@
-name = Blue
-description = Flavor 4
-screenshot = screenshot.png
-
-styles[en]=flavor4.css
-styles[he]=flavor4_rtl.css

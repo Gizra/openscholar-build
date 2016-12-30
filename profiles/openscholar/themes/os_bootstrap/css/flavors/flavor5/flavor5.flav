@@ -1,6 +1,0 @@
-name = Bronze
-description = Flavor 5
-screenshot = screenshot.png
-
-styles[en]=flavor5.css
-styles[he]=flavor5_rtl.css

@@ -1,6 +1,0 @@
-name = Mix
-description = Flavor 1
-screenshot = screenshot.png
-
-styles[en]=flavor1.css
-styles[he]=flavor1_rtl.css
