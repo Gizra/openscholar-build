@@ -1,0 +1,10 @@
+name = Chaos Tools (CTools) AJAX Example
+description = Shows how to use the power of Chaos AJAX.
+package = Chaos tool suite
+dependencies[] = ctools
+core = 7.x
+
+; Information added by drush on 2012-11-16
+version = "7.x-1.2+7-dev"
+project = "ctools"
+datestamp = "1353098419"

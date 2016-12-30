@@ -1,0 +1,10 @@
+name = Custom content panes
+description = Create custom, exportable, reusable content panes for applications like Panels.
+core = 7.x
+package = Chaos tool suite
+dependencies[] = ctools
+
+; Information added by drush on 2012-11-16
+version = "7.x-1.2+7-dev"
+project = "ctools"
+datestamp = "1353098419"

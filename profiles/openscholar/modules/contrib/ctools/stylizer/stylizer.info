@@ -1,0 +1,11 @@
+name = Stylizer
+description = Create custom styles for applications such as Panels.
+core = 7.x
+package = Chaos tool suite
+dependencies[] = ctools
+dependencies[] = color
+
+; Information added by drush on 2012-11-16
+version = "7.x-1.2+7-dev"
+project = "ctools"
+datestamp = "1353098419"
