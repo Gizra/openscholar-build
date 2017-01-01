@@ -643,7 +643,6 @@ ul ul ul ul {
     display: block;
 }
 /* Don't display the ical link in the floating box. */
-
 #cboxWrapper .node-event .links {
     display: none;
 }
